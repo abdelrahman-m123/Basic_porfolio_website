@@ -5,5 +5,5 @@ This is a basic portfolio website done using basic HTML, CSS, JavaScript. this w
 
 ## Screenshot
 
-<img src="">
+<img src="App.png">
 
