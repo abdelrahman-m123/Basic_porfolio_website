@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Porfolio Website</title>
+        <link rel="stylesheet" href="./style.css"/>
+
+    </head>
+    <body>
+        <div class="topmenu">
+            <nav>
+                <h5><a href="#1">About Me</a></h5>
+                <h5><a href="#2">Skills</a></h5>
+                <h5><a href="#3">Projects</a></h5>
+                <h5><a href="#4">Recommendation</a></h5>
+            </nav>
+            <h3>Marry john</h3>
+            <img src="./images/toppng.com-white-outline-phone-telephone-icon-free-1067x1116.png"><pre>  +12345656345</pre> 
+            <img src="./images/Lovepik_com-400283664-envelope-linear-icon.png">   <pre>    Mjohn@email.com</pre>
+        </div>
+        <div class="maindiv">
+            <div class="aboutme" id="1">
+                <img src="./images/1ddadd3f25e47bb566367b70ab3086.png"> 
+                <h1>Hi, I'm Marry john! &#128075;</h1>
+                <p>I am a full-stack developer with 2 years of experience in both front-end and back-end development. I have worked on applications and microservices deployed on IBM Cloud. I am proficient in IBM Watson Services and have utilized Watson Assistant, NLU, and Sentiment Analyzer in various projects.</p>
+   
+            </div>
+            <div class="skills sec" id="2">
+                <h1>Skills</h1>
+                <div class="skillbox">
+                    <img src="./images/pngegg.png" > <span class="name">HTML</span> <br><br> <span>2 years</span>
+                </div>
+
+                <div class="skillbox">
+                    <img src="./images/6d9f9de27017591567f6c2d94f21e797.png" >  <span class="name">Javascript</span> <br><br> <span>2 years</span>
+                </div>
+
+                <div class="skillbox" >
+                    <img src="./images/cad715fe256be979552549f07a68ab73.png" >  <span class="name">Java</span> <br><br> <span>New</span>
+                    
+                </div>
+                
+                <div class="skillbox">
+                    <img src="./images/pngwing.com.png" >  <span class="name">React.js</span> <br> <br> <span>New</span>
+                </div>
+
+                <div class="skillbox">
+                    <img src="./images/pngwing.com (1).png" >  <span class="name">C++</span> <br> <br> <span>New</span>
+                </div>
+            </div>
+            <div class="projects sec" id="3">
+                <h1>Projects</h1>
+                <div id="pdiv">
+
+                <h3>E-Learning Platform</h3>
+                <ul><li>Designed and developed an interactive e-learning platform for students, incorporating video tutorials, quizzes, and progress tracking using React, Node.js, and MongoDB</li></ul>
+                <div class="hrd"><hr></div>
+                <h3>Inventory Management System</h3>
+                <ul><li>Built a cloud-based inventory management system for small businesses, enabling real-time stock tracking and automated alerts using Python, Flask, and PostgreSQL </li></ul>
+                <div class="hrd"><hr></div>
+                <h3>Travel Booking Website</h3>
+                <ul><li>Created a responsive travel booking website that allows users to search, compare, and book trips with integrated payment processing using Angular, Firebase, and PayPal API</li></ul>
+
+                </div>
+
+            </div>
+            <div class="recommedation sec" id="4">
+                <h1>Recommendations</h1>
+                <div class=".rbox-container">
+                    <div class="rbox">
+                        "Marry is an exceptional team player with a strong understanding of web development. She is quick to learn, highly motivated, and always willing to take initiative. Her problem-solving skills and leadership potential make her a valuable asset to any organization."
+                    </div>
+
+                    <div class="rbox">
+                        "Working with Marry has been an incredible experience. She is knowledgeable, detail-oriented, and always goes the extra mile to ensure high-quality results. Her dedication and commitment to excellence make her a fantastic addition to any team."
+                    </div>
+
+                    <div class="rbox">
+                        "I had the opportunity to collaborate with Marry during a critical project phase, and her expertise was invaluable. She is a proactive and resourceful professional with deep domain knowledge. Any organization would be fortunate to have her on their team."
+                    </div>
+                </div>
+                
+               
+            </div> 
+            <div class="formd">
+                <form onsubmit="return solution();">
+                    <label>Leave a Recommendation</label><br><br>
+                    <input type="text" id="fname" placeholder="Name (optional)"/><br><br>
+                    <textarea id="frec" placeholder="Message"></textarea><br><br><br>
+                    <button type="submit">Submit</button>
+                </form>
+                 
+            </div>
+            <a id="homeicon" href="#top"><img  src="./images/pngwing.com (2).png"/></a>
+            
+        </div>
+    </body>
+    <script>
+        function solution(){
+            var name = document.getElementById("fname");
+            var rec = document.getElementById("frec");
+
+            if(rec.value == ""){
+                alert("Please enter a recommendation");
+                
+            }else{
+               var x = document.createElement("div");
+
+                x.setAttribute("class", "rbox");
+
+                x.textContent= '"'+ rec.value + '"';
+
+                if(name.value != ""){
+                    x.textContent += ('-' + name.value);
+                } 
+               alert("Thank you for the recommendation!")
+                var p = document.getElementById("4");
+
+                p.appendChild(x);
+
+                return false;
+
+                
+
+            }
+
+            
+
+
+
+            
+        }
+    </script>
+</html>

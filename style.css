@@ -1,0 +1,197 @@
+.topmenu img{
+    width: 0.45cm;
+    float:left;
+}
+nav{
+    float:right;
+}
+
+nav h5{
+    display:inline-block;
+    margin-left:20px;
+    margin-right: 20px;
+}
+nav a{
+    color:white;
+    text-decoration:none;
+    font-weight: lighter;
+}
+nav a:hover{
+    text-decoration: underline;
+    font-weight: bolder;
+
+}
+.topmenu h3{
+    margin-bottom: 5px;
+
+}
+body{
+    background-color: #5f6bc0;
+    padding:0%;
+}
+
+.topmenu{
+    color:white;
+    margin-left: 3%;
+}
+pre{
+    margin:0;
+}
+*{
+    font-family:arial;
+
+}
+.maindiv{
+    background-color:white;
+    position: absolute;
+    left:0px;
+    right:0px;
+    margin-top: 20px;
+    color: #080808;
+    font-weight: 400;
+    height: 200%;
+    width: 100%;
+
+}
+.aboutme{
+    margin:0;
+    position:relative;
+    top:0px;
+}
+.maindiv h1 {
+    margin-top: 0.5cm;
+    color:#5f6bc0;
+    font-size: 1.5rem;
+
+
+}
+.maindiv p{
+    margin-right: 20%;
+    margin-bottom: 40PX;
+    width: 600px;
+}
+.maindiv img{
+    width: 5cm;
+    float:left;
+    margin-top: 20px;
+    margin: 1cm;
+    margin-bottom: 20px;
+    margin-top: 0%;
+    position: relative;
+}
+.sec h1{
+    margin-left: 1cm;
+    margin: 20px;
+    margin-bottom: 0;
+    
+}
+.sec{
+    font-weight: bolder;
+    position:relative;
+}
+.skillbox{
+    width:3cm;
+    height:3cm;
+    display:inline-block;
+    box-shadow:  3px 3px 4px gray, -3px -3px 4px gray, -3px 3px 4px gray, 3px -3px 4px gray ;
+    border-radius: 3px;
+    /* border-style: solid; */
+    margin: .7cm;
+    text-align: center;
+    font-size: smaller;
+    margin-bottom: .5cm;
+}
+.skillbox img{
+    width: 30px;
+    height: 30px;
+    display:block;
+    margin-bottom: 20px;
+}
+.skillbox span{
+    position:a
+}
+.name{
+    
+    font-size: smaller;
+}
+.projects li{
+    font-weight: lighter;
+}
+#pdiv{
+    margin-left: 40px;
+}
+.projects li,.projects h3{
+    margin:10px;
+    
+    font-size: smaller;
+}
+.hrd{
+    width:70%;
+    margin-left: 15%;
+}
+.rbox{
+    display:inline-block;
+    max-width:8cm;
+    min-width: 3cm;
+    height:4cm;
+    margin:0.5cm;
+    border-style: solid;
+    border-color: gray;
+    border-radius: 6px;
+    border-width: 1px;
+    padding: 7px;
+    font-weight: lighter;
+    font-style: italic;
+    text-align: center;
+}
+
+form{
+    text-align: center;
+    
+}
+#fname{
+    width:50%;
+    border-radius: 2px;
+    border-width: 1px;
+    color:gray;
+}
+#frec{
+    width:50%;
+    height:2cm;
+    border-radius: 2px;
+    border-width: 1px;
+    resize:none;
+    color:gray;
+}
+.formd{
+
+    margin:30px;
+    width:100%;
+}
+
+button{
+    background-color: white;
+    color:#5f6bc0;
+    border-radius: 5%;
+    border-color: #5f6bc0;
+    border-width: 3px;
+    width:4cm;
+    height:1cm;
+    font-weight: 600;
+}
+.robx-container{
+    display:flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+#homeicon{
+    left:1cm;
+    bottom:1cm;
+}
+#homeicon img{
+    width:1cm;
+    margin-left: 90%;
+
+    
+}
